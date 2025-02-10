@@ -89,7 +89,9 @@
     border: 1px solid var(--mc);
     background: var(mc);
 }
-
+.header-two button a {
+    color: var(--mc);
+}
 
 
 .header {
@@ -171,6 +173,9 @@ section {
 }
 .hero .swiper .slide button:hover {
     background: var(--bgc);
+}
+.hero .swiper .slide button a {
+    color: #fff;
 }
 
 
