@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./admin.css">
+    <script type="module" src="./admin.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Admin | Dashboard</title>
+</head>
+<body>
+    <section id="menu">
+        <div class="logo">
+            <img src="/img/logo.png" alt="">
+            <h2>Humo Invest</h2>
+        </div>
+        <div class="items">
+            <li><i class="bx bxs-user"></i><a href="#">Dashboard</a></li>
+            <li><i class="bx bxs-chart"></i><a href="#">Tables</a></li>
+            <li><i class="bx bxs-chart"></i><a href="#">Cards</a></li>
+            <li><i class="bx bxs-chart"></i><a href="#">Settings</a></li>
+            <li><i class="bx bxs-chart"></i><a href="#">Blank</a></li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div><i id="menu-btn" class="bx bxs-chart"></i></div>
+                <div class="search">
+                    <i class="bx bxs-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="profile">
+                <i class="bx bxs-bell"></i>
+                <img src="/img/logo.png" alt="">
+            </div>
+        </div>
+
+        <h3 class="i-name">
+            Dashboard
+        </h3>
+
+        <div class="values">
+            <div class="valBox">
+                <i class="bx bxs-group"  style="--i: lightblue;"></i>
+                <div class="val">
+                    <h3>8 211</h3>
+                    <span>New users</span>
+                </div>
+            </div>
+            <div class="valBox">
+                <i class="bx bxs-group" style="--i: orange;"></i>
+                <div class="val">
+                    <h3>200 125</h3>
+                    <span>Total users</span>
+                </div>
+            </div>
+            <div class="valBox">
+                <i class="bx bxs-group" style="--i: chocolate;"></i>
+                <div class="val">
+                    <h3>1 255 122 301 $</h3>
+                    <span>Investitsiya</span>
+                </div>
+            </div>
+            <div class="valBox">
+                <i class="bx bxs-group" style="--i: purple;"></i>
+                <div class="val">
+                    <h3>1 094</h3>
+                    <span>Projects</span>
+                </div>
+            </div>
+        </div>
+
+        <dir class="board">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th>T/r</th>
+                        <th>Name</th>
+                        <th>Title</th>
+                        <th>Status</th>
+                        <th>Role</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="people">
+                            <img src="/img/s-4.jpg" alt="">
+                            <div class="people-de">
+                                <h5>John Doe</h5>
+                                <p>john@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Software Engineer</h5>
+                            <p>Web dev</p>
+                        </td>
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="people">
+                            <img src="/img/s-4.jpg" alt="">
+                            <div class="people-de">
+                                <h5>Mack Brown</h5>
+                                <p>MCBrown@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Android Developer</h5>
+                            <p>Android dev</p>
+                        </td>
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+                        <td class="role">
+                            <p>Businessmen</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="people">
+                            <img src="/img/s-4.jpg" alt="">
+                            <div class="people-de">
+                                <h5>John Doe</h5>
+                                <p>john@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Software Engineer</h5>
+                            <p>Web dev</p>
+                        </td>
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="people">
+                            <img src="/img/s-4.jpg" alt="">
+                            <div class="people-de">
+                                <h5>John Doe</h5>
+                                <p>john@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Software Engineer</h5>
+                            <p>Web dev</p>
+                        </td>
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="people">
+                            <img src="/img/s-4.jpg" alt="">
+                            <div class="people-de">
+                                <h5>John Doe</h5>
+                                <p>john@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Software Engineer</h5>
+                            <p>Web dev</p>
+                        </td>
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="people">
+                            <img src="/img/s-4.jpg" alt="">
+                            <div class="people-de">
+                                <h5>John Doe</h5>
+                                <p>john@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Software Engineer</h5>
+                            <p>Web dev</p>
+                        </td>
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="people">
+                            <img src="/img/s-4.jpg" alt="">
+                            <div class="people-de">
+                                <h5>John Doe</h5>
+                                <p>john@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Software Engineer</h5>
+                            <p>Web dev</p>
+                        </td>
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="people">
+                            <img src="/img/s-4.jpg" alt="">
+                            <div class="people-de">
+                                <h5>John Doe</h5>
+                                <p>john@gmail.com</p>
+                            </div>
+                        </td>
+                        <td class="people-des">
+                            <h5>Software Engineer</h5>
+                            <p>Web dev</p>
+                        </td>
+                        <td class="active">
+                            <p>Active</p>
+                        </td>
+                        <td class="role">
+                            <p>Owner</p>
+                        </td>
+                        <td class="edit"><a href="#">Edit</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </dir>
+    </section>
+
+</body>
+</html>
