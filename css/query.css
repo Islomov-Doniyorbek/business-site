@@ -1,0 +1,124 @@
+@media(max-width:1200px){
+    .footer .row-two {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(max-width:991px){
+    .header-two .box {
+        display: none;
+    }
+    .header .search i {
+        display: none;
+    }
+    .header .navbar .navLinks li {
+        padding: 1.7rem 1rem;
+    }
+
+
+    .service .service-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .project .filterContent {
+        grid-template-columns: 1fr 1fr;
+    }
+    .project .filterBtn button {
+        flex-grow: 1;
+    }
+
+
+
+
+}
+@media(max-width:780px){
+    .footer .row-two {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 768px){
+    .header-top .header-one .location  {
+        display: none;
+    }
+    #menuBtn {
+        display: block;
+        padding: 1rem;
+    }
+    .header .navbar .navLinks {
+        display: none;
+    }
+    .header .navbar .navLinks.toggle {
+        display: block;
+    }
+    .header .search i {
+        display: none;
+    }
+    .hero .swiper .slide h1 {
+        font-size: 1.6rem;
+    }
+    .hero .swiper .slide p {
+        width: 100%;
+    }
+    .header .navbar .navLinks li {
+        padding: 1rem;
+    }
+    .header .navbar .navLinks li:hover {
+        background: transparent;
+    }
+    .header .navbar .navLinks li a:hover {
+        color: var(--mc);
+    }
+
+
+
+    section p.text {
+        width: 100%;
+    }
+    .about-row .col-2 img {
+        width: 100%;
+    }
+    .about-row .col-1 .number {
+        grid-template-columns: 1fr;
+    }
+
+
+    .project .filterContent {
+        grid-template-columns: 1fr;
+    }
+    .filterContent .filterCol .image {
+        height: auto;
+    }
+}
+
+@media(max-width: 550px){
+    .header-top .header-one .phone {
+        display: none;
+    }
+    .header-top .header-one .invader {
+        padding-left: 6rem;
+    }
+
+
+
+
+    .footer .row-two {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer .row-one .col-1 p {
+        width: 100%;
+    }
+    .footer .row-one .col-1 p.text {
+        width: 100%;
+    }
+    .footer-bottom .topBtn a {
+        right: 1rem;
+        font-size: 2.5rem;
+        bottom: 1rem;
+    }
+
+}
+@media(max-width: 430px){
+    .service .service-row {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./users.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Foydalanuvchilar ro'yxati</title>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="filterEntries">
+                <div class="entries">
+                    Show <select name="" id="tableSiz">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select> entries
+                </div>
+                <div class="filter">
+                    <label for="search">Search:</label>
+                    <input type="search" name="" placeholder="Name/city/post" id="search">
+                </div>
+            </div>
+
+            <div class="addMemberBtn">
+                <button>Add new member</button>
+            </div>
+        </header>
+
+
+        <table>
+            <thead>
+                <tr class="heading">
+                    <th>№</th>
+                    <th>Picture</th>
+                    <th>Full Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Type</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Nick Name</th>
+                    <th>Password</th>
+                    <th>Last online</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr><td class="empty" colspan="11" align="center">Ma'lumotlar mavjud emas!</td></tr> -->
+                <tr>
+                    <td>1</td>
+                    <td><img src="/img/logo.png" alt="0"></td>
+                    <td>Sent Zimbermen</td>
+                    <td>31</td>
+                    <td>Berlin</td>
+                    <td>Investor</td>
+                    <td>zimber1994@gmail.com</td>
+                    <td>+40 511 21 3366</td>
+                    <td>zimber1994</td>
+                    <td>zimber_1994</td>
+                    <td>21:29</td>
+                    <td>
+                        <button>
+                            <i class='bx bx-folder-open'></i>
+                        </button>
+                        <button><i class='bx bxs-trash'></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="/img/logo.png" alt="0"></td>
+                    <td>Sent Zimbermen</td>
+                    <td>31</td>
+                    <td>Berlin</td>
+                    <td>Investor</td>
+                    <td>zimber1994@gmail.com</td>
+                    <td>+40 511 21 3366</td>
+                    <td>zimber1994</td>
+                    <td>zimber_1994</td>
+                    <td>21:29</td>
+                    <td>
+                        <button>
+                            <i class='bx bx-folder-open'></i>
+                        </button>
+                        <button><i class='bx bxs-trash'></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="/img/logo.png" alt="0"></td>
+                    <td>Sent Zimbermen</td>
+                    <td>31</td>
+                    <td>Berlin</td>
+                    <td>Investor</td>
+                    <td>zimber1994@gmail.com</td>
+                    <td>+40 511 21 3366</td>
+                    <td>zimber1994</td>
+                    <td>zimber_1994</td>
+                    <td>21:29</td>
+                    <td>
+                        <button>
+                            <i class='bx bx-folder-open'></i>
+                        </button>
+                        <button><i class='bx bxs-trash'></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="/img/logo.png" alt="0"></td>
+                    <td>Sent Zimbermen</td>
+                    <td>31</td>
+                    <td>Berlin</td>
+                    <td>Investor</td>
+                    <td>zimber1994@gmail.com</td>
+                    <td>+40 511 21 3366</td>
+                    <td>zimber1994</td>
+                    <td>zimber_1994</td>
+                    <td>21:29</td>
+                    <td>
+                        <button>
+                            <i class='bx bx-folder-open'></i>
+                        </button>
+                        <button><i class='bx bxs-trash'></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <footer>
+            <span>50 tadan 1 dan 10 gacha ko'rinmoqda</span>
+            <div class="pagination">
+                <button>Prev</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>Next</button>
+            </div>
+        </footer>
+    </div>
+    <script src="./users.js"></script>
+</body>
+</html>

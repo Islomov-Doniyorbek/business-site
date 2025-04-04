@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Ro'yxatdan o'tish</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="formBox login">
+            <form action="">
+                <h1>Log In</h1>
+                <div class="inputBox">
+                    <input type="text" placeholder="username" required>
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="Password" required>
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+                <div class="forgotLink">
+                    <a href="#">Forgot password</a>
+                </div>
+                <button class="btn" type="submit">Log In</button>
+                <p>or login with social platforms</p>
+                <div class="socialIcons">
+                    <a href="#"><i class="bx bxl-google"></i></a>
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-github"></i></a>
+                    <a href="#"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+        <div class="formBox register">
+            <form action="" method="post">
+                <h1>Registration</h1>
+                <div class="inputBox">
+                    <input id="firstName" type="text" placeholder="First name" required>
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="inputBox">
+                    <input id="lastName" type="text" placeholder="Last name" required>
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="inputBox">
+                    <input id="email" type="email" placeholder="Email" required>
+                    <i class="bx bxs-envelope"></i>
+                    <p class="email-info"></p>
+                </div>
+                <div class="inputBox">
+                    <input id="password" type="password" placeholder="Password" required>
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+                <div class="inputBox">
+                    <input id="confirmPassword" type="password" placeholder="Confirm" required>
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+                <div class="inputBox">
+                    <input id="tgNickName" type="text" placeholder="Telegram NickName" required>
+                    <i class="bx bxs-user"></i>
+                </div>
+                <div class="inputBox">
+                    <input list="cities" id="city" name="city" placeholder="countries">                    
+                    <datalist id="cities">
+                        <option value="Uzbekistan">
+                        <option value="Kyrgistan">
+                        <option value="Kazakhstan">
+                        <option value="Turkmenstan">
+                        <option value="Tadjikstan">
+                        <option value="Russia">
+                        <option value="Azerbaijan">
+                        <option value="Turkey">
+                        <option value="Belorus">
+                    </datalist>
+                    <i class="bx bxs-map"></i>
+                </div>
+                <div class="inputBox">
+                    <select name="role" id="role">
+                        <option value="default">Role</option>
+                        <option value="Investor">Investor</option>
+                        <option value="ENTREPRENEUR">Businessmen</option>
+                    </select>
+                    <i class="bx bxs-lock-user"></i>
+                </div>
+                <button class="btn" id="reg" type="submit">Register</button>
+                
+            </form>
+        </div>
+
+        <div class="toggleBox">
+            <div class="togglePanel toggleLeft">
+                <h1>Salom, Xush kelibsiz!</h1>
+                <p>Akkauntingiz yo'qmi?!</p>
+                <button class="btn registerBtn">Register</button>
+            </div>
+            <div class="togglePanel toggleRight">
+                <h1>Xush kelibsiz!</h1>
+                <p>Akkauntingiz bormi?!</p>
+                <button class="btn loginBtn">Log In</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="./auth.js"></script>
+</body>
+</html>
