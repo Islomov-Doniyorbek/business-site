@@ -21,7 +21,11 @@ function avtorizatsiya(){
     tgNickName = document.querySelector("#tgNickName"),
     city = document.querySelector("#city"),
     role = document.querySelector("#role"),
-    sendBtn = document.querySelector("#reg")
+    loginName = document.querySelector("#loginName"),
+    loginPassword = document.querySelector("#loginPassword"),
+    loginRole = document.querySelector("#loginRole"),
+    sendBtn = document.querySelector("#reg"),
+    loginBtn = document.querySelector("#logIn")
 
 
     
@@ -78,6 +82,36 @@ function avtorizatsiya(){
         console.error('Error:', error);
     }
 });
+
+
+    loginBtn.addEventListener("click", async (event)=>{
+        try {
+            event.preventDefault()
+            // console.log(loginName.value);
+    
+            const response = await fetch('http://3.78.83.20:3000/api/auth/sign-in', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    "email": loginName.value,
+                    "password": loginPassword.value,
+                    "role": loginRole.value
+                  })
+            });
+            const data = await response.json();
+            console.log(data);
+           if(data.access_token){
+                window.location.href = "/index.html";
+                const accTok = localStorage.setItem("accTok", data.access_token)
+           }
+    
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    })
+
 
 }
 avtorizatsiya()

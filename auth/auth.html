@@ -15,17 +15,21 @@
             <form action="">
                 <h1>Log In</h1>
                 <div class="inputBox">
-                    <input type="text" placeholder="username" required>
+                    <input type="text" id="loginName" placeholder="username" required>
                     <i class="bx bxs-user"></i>
                 </div>
                 <div class="inputBox">
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
                     <i class="bx bxs-lock-alt"></i>
                 </div>
+                <select name="role" id="loginRole">
+                    <option value="INVESTOR">Investor</option>
+                    <option value="ENTREPRENEUR">Businessmen</option>
+                </select>
                 <div class="forgotLink">
                     <a href="#">Forgot password</a>
                 </div>
-                <button class="btn" type="submit">Log In</button>
+                <button class="btn" type="submit" id="logIn">Log In</button>
                 <p>or login with social platforms</p>
                 <div class="socialIcons">
                     <a href="#"><i class="bx bxl-google"></i></a>
@@ -80,8 +84,7 @@
                 </div>
                 <div class="inputBox">
                     <select name="role" id="role">
-                        <option value="default">Role</option>
-                        <option value="Investor">Investor</option>
+                        <option value="INVESTOR">Investor</option>
                         <option value="ENTREPRENEUR">Businessmen</option>
                     </select>
                     <i class="bx bxs-lock-user"></i>
